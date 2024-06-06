@@ -4,8 +4,8 @@ interface UnionIndex {
 }
 
 // Створіть інтерфейс, у якому типи значень у сигнатурі індексу є функціями
-interface ArrayLike<T> {
-  [key: number]: T;
+interface FunctionIndex {
+  [key: string]: (...args: any[]) => any;
 }
 
 // Створіть інтерфейс з певними властивостями та індексною сигнатурою
